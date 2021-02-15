@@ -1,12 +1,16 @@
-
 import './Page.scss';
+import Entete from './Entete';
+import ListeDossier from './ListeDossier';
+import BtnAjoutDossier from './BtnAjoutDossier';
 
-export default function Page(props) {
-  return (
+export default function Page() {
+return (
     <div className="Page">
-      <header className="Page-header">
-      </header>
+       <Entete />
+       <section className="contenuPrincipal">
+        <ListeDossier />
+      </section>
+      <BtnAjoutDossier />
     </div>
   );
 }
-
